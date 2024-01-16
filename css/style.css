@@ -1,0 +1,82 @@
+:root {
+  --black-color: #263238;
+  --base-color: #baef00;
+  --base-color-active: #a3d200;
+  --base-color-hover: #d9ff56;
+  --border-color: #e3e3e3;
+  --placeholder-color: #8d8d8d;
+  --transition-duration: 0.3s;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+/* ссылка */
+.default-link {
+  font-size: 20px;
+  text-decoration: underline;
+  color: var(--black-color);
+  transition: color var(--transition-duration),
+    background-color var(--transition-duration);
+}
+
+.default-link:focus-visible {
+  background-color: var(--base-color);
+  outline: none;
+}
+
+.default-link:hover {
+  color: var(--base-color-hover);
+}
+
+.default-link:active {
+  color: var(--base-color-active);
+}
+
+/* Кнопка */
+.default-btn {
+  color: var(--black-color);
+  padding: 11px 47px;
+  border-radius: 12px;
+  background-color: var(--base-color);
+  border: none;
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  transition: color var(--transition-duration),
+    background-color var(--transition-duration);
+  cursor: pointer;
+}
+.default-btn:focus-visible {
+  outline-color: var(--base-color);
+}
+.default-btn:hover {
+  background-color: var(--base-color-hover);
+}
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 15px;
+}
+
+@media (max-width: 740px) {
+}
