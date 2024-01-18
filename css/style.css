@@ -363,8 +363,18 @@ a {
 .catalog__card {
   height: 100%;
 }
+/* Футер */
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 23px 15px;
+  background-color: var(--border-color);
+}
+.footer__logo {
+  opacity: 50%;
+}
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 920px) {
   /* Форма обратной связи */
   .callback-form {
     flex-direction: column;
